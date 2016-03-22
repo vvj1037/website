@@ -22,7 +22,8 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 /*------ HEADERBG STARTS---------*/
 .headerbg{
-	background: url(../images/bannerbg.png);
+	/*background: url(../images/bannerbg.png); */
+	background-color:#20191B;
 	min-height:700px;
 	width:100%;
 	background-size:cover;
@@ -67,8 +68,14 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 /*------ TOPNAV ENDS---------*/
 /*------ HEADER ENDS---------*/
 /*------ BANNER STARTS---------*/
+.img-cir {
+  border-radius: 500px;
+  height:300px;
+  width:300px;
+}
 .banner{
-  	position: absolute;
+  	position: relative;
+  	top-margin:1000px;
 	width: 86%;
 }
 .banner-info{
@@ -81,6 +88,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 .bannerhead{
 	float:right;
+	bottom-margin:500px;
 }
 .bannerhead h2{
 	color: #C5B7B8;
