@@ -50,13 +50,18 @@
 	      <div class="container">
 		     <div class="banner-info">
 			      <div class="bannerlogo">
-					  
+					 
 			      </div>
 			      <div class="bannerhead">
-				      <h2><span>Varun Vinayak Joglekar</span></h2>
-				      <!-- <h3 style="color:white;">Developer</h3> -->
+			      		<table>
+			      			<tr>
+			      				<td><img class="img-cir" src="web/images/vj.jpg"> </td>
+			      				<td colspan=2><h2><span>Varun Vinayak Joglekar</span><br><br><p style="font-size:20px;">"2nd Year Undergraduate in CSE from IIT Indore."</p></h2></td>
+			      			</tr>
+			      		</table>
+ 						<!-- <h3 style="color:white;">Developer</h3> -->
 				      <br>
-				      <p style="font-size:20px;">"2nd Year Undergraduate in CSE from IIT Indore."</p>
+				      
 					  <a class="downarrow scroll" href="#about"><span> </span></a>
 			      </div>
 			 </div>
@@ -114,25 +119,25 @@
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-1"></div>									
-												 <h3>MySql</h3>	
+												 <h3>JavaScript</h3>	
 											 </div>								  
 										</div>
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-2"></div>									
-												 <h3>AJAX</h3>	
+												 <h3>Android</h3>	
 											 </div>								  
 										</div>
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-3"></div>									
-												 <h3>PHP</h3>	
+												 <h3>HTML/CSS</h3>	
 											 </div>								  
 										</div>
 										<div class="col-md-3">	
 											<div class="skill-grid">
 												<div class="circle" id="circles-4"></div>									
-												 <h3>JAVASCRIPT</h3>	
+												 <h3>PHP-MySql</h3>	
 											 </div>								  
 										</div>
 										<div class="clearfix"> </div>
@@ -145,16 +150,17 @@
 									var colors = [
 											['#30222A', '#ffffff'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
 										];
+									var pc = [0,40,50,50,60,75]	
 									for (var i = 1; i <= 5; i++) {
 										var child = document.getElementById('circles-' + i),
 											percentage = 50 + (i * 10);
 											
 										Circles.create({
 											id:         child.id,
-											percentage: percentage,
+											percentage: pc[i],
 											radius:     80,
 											width:      15,
-											number:   	i,
+											number:   	pc[i],
 											text:       '',
 											colors:     colors[0]
 										});
@@ -165,7 +171,7 @@
 					<!--/-->
 			 </div>
 		 </div>
-		   <a class="down scroll" href="#port"><span> </span></a>
+		   <a class="down scroll" href="#contact"><span> </span></a>
 	  </div>
 	  </div>
 	 <!------SKILLS Ends--------->
